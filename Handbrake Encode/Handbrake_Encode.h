@@ -3,7 +3,7 @@
 //  Handbrake Encode
 //
 //  Created by Paul Grave on 17/07/2011.
-//  Copyright 2011 SkySports.com. All rights reserved.
+//  Copyright 2011 Paul Grave. All rights reserved.
 //
 
 #import <Automator/AMShellScriptAction.h>
