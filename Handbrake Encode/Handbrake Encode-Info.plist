@@ -10,7 +10,7 @@
 		<true/>
 		<key>Types</key>
 		<array>
-			<string>com.apple.cocoa.path</string>
+			<string>com.apple.cocoa.string</string>
 		</array>
 	</dict>
 	<key>AMApplication</key>
@@ -20,9 +20,20 @@
 	<key>AMCanShowWhenRun</key>
 	<true/>
 	<key>AMCategory</key>
-	<string>(* Category of this action goes here. *)</string>
+	<string>AMCategoryMovies</string>
 	<key>AMDefaultParameters</key>
-	<dict/>
+	<dict>
+		<key>container</key>
+		<integer>0</integer>
+		<key>deinterlace</key>
+		<integer>0</integer>
+		<key>deleteSource</key>
+		<integer>0</integer>
+		<key>preset</key>
+		<integer>0</integer>
+		<key>quality</key>
+		<real>20</real>
+	</dict>
 	<key>AMDescription</key>
 	<dict>
 		<key>AMDAlert</key>
@@ -56,7 +67,7 @@
 		<string>List</string>
 		<key>Types</key>
 		<array>
-			<string>com.apple.cocoa.path</string>
+			<string>com.apple.cocoa.string</string>
 		</array>
 	</dict>
 	<key>AMRequiredResources</key>
@@ -97,6 +108,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2011 SkySports.com. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>AMShellScriptAction</string>
+	<string>Handbrake_Encode</string>
 </dict>
 </plist>

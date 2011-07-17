@@ -6,10 +6,16 @@
 //  Copyright 2011 SkySports.com. All rights reserved.
 //
 
-#import <Automator/AMBundleAction.h>
+#import <Automator/AMShellScriptAction.h>
 
-@interface Handbrake_Encode : AMBundleAction
+@interface Handbrake_Encode : AMShellScriptAction {
+	NSTextField *qualityTextField;
+	double quality;
+}
 
-- (id)runWithInput:(id)input fromAction:(AMAction *)anAction error:(NSDictionary **)errorInfo;
+@property (assign) IBOutlet NSTextField *qualityTextField;
+
+- (IBAction)sliderMove:(id)sender;
+
 
 @end

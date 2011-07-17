@@ -13,6 +13,7 @@
 		DA49F60D13D3265500CB2C71 /* Handbrake_Encode.h in Resources */ = {isa = PBXBuildFile; fileRef = DA49F60C13D3265500CB2C71 /* Handbrake_Encode.h */; };
 		DA49F60F13D3265500CB2C71 /* Handbrake_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */; };
 		DA49F61213D3265600CB2C71 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA49F61013D3265600CB2C71 /* main.xib */; };
+		DA49F61A13D3286F00CB2C71 /* main.command in Resources */ = {isa = PBXBuildFile; fileRef = DA49F61913D3286F00CB2C71 /* main.command */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,13 @@
 		DA49F60313D3265400CB2C71 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		DA49F60413D3265400CB2C71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		DA49F60513D3265400CB2C71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DA49F60813D3265500CB2C71 /* Handbrake Encode-Info.plist */ = {isa = PBXFileReference; path = "Handbrake Encode-Info.plist"; sourceTree = "<group>"; };
+		DA49F60813D3265500CB2C71 /* Handbrake Encode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Handbrake Encode-Info.plist"; sourceTree = "<group>"; };
 		DA49F60A13D3265500CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA49F60C13D3265500CB2C71 /* Handbrake_Encode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handbrake_Encode.h; sourceTree = "<group>"; };
 		DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handbrake_Encode.m; sourceTree = "<group>"; };
 		DA49F61113D3265600CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
-		DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */ = {isa = PBXFileReference; path = "Handbrake Encode-Prefix.pch"; sourceTree = "<group>"; };
+		DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handbrake Encode-Prefix.pch"; sourceTree = "<group>"; };
+		DA49F61913D3286F00CB2C71 /* main.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = main.command; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */,
 				DA49F61013D3265600CB2C71 /* main.xib */,
 				DA49F60713D3265500CB2C71 /* Supporting Files */,
+				DA49F61913D3286F00CB2C71 /* main.command */,
 			);
 			path = "Handbrake Encode";
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 		DA49F5F113D3265400CB2C71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = SkySports.com;
+				ORGANIZATIONNAME = "Paul Grave";
 			};
 			buildConfigurationList = DA49F5F413D3265400CB2C71 /* Build configuration list for PBXProject "Handbrake Encode" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -155,6 +158,7 @@
 				DA49F60B13D3265500CB2C71 /* InfoPlist.strings in Resources */,
 				DA49F60D13D3265500CB2C71 /* Handbrake_Encode.h in Resources */,
 				DA49F61213D3265600CB2C71 /* main.xib in Resources */,
+				DA49F61A13D3286F00CB2C71 /* main.command in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
