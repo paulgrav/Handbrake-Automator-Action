@@ -29,7 +29,7 @@
 		DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handbrake_Encode.m; sourceTree = "<group>"; };
 		DA49F61113D3265600CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
 		DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handbrake Encode-Prefix.pch"; sourceTree = "<group>"; };
-		DA49F61913D3286F00CB2C71 /* main.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = main.command; sourceTree = "<group>"; };
+		DA49F61913D3286F00CB2C71 /* main.command */ = {isa = PBXFileReference; explicitFileType = text.script.perl; fileEncoding = 4; path = main.command; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +303,7 @@
 				DA49F61813D3265600CB2C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
