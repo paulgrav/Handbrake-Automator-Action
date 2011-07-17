@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA49F5FF13D3265400CB2C71 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA49F5FE13D3265400CB2C71 /* Automator.framework */; };
+		DA49F60113D3265400CB2C71 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA49F60013D3265400CB2C71 /* Cocoa.framework */; };
+		DA49F60B13D3265500CB2C71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA49F60913D3265500CB2C71 /* InfoPlist.strings */; };
+		DA49F60D13D3265500CB2C71 /* Handbrake_Encode.h in Resources */ = {isa = PBXBuildFile; fileRef = DA49F60C13D3265500CB2C71 /* Handbrake_Encode.h */; };
+		DA49F60F13D3265500CB2C71 /* Handbrake_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */; };
+		DA49F61213D3265600CB2C71 /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA49F61013D3265600CB2C71 /* main.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA49F5FB13D3265400CB2C71 /* Handbrake Encode.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Handbrake Encode.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA49F5FE13D3265400CB2C71 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		DA49F60013D3265400CB2C71 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA49F60313D3265400CB2C71 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA49F60413D3265400CB2C71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA49F60513D3265400CB2C71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA49F60813D3265500CB2C71 /* Handbrake Encode-Info.plist */ = {isa = PBXFileReference; path = "Handbrake Encode-Info.plist"; sourceTree = "<group>"; };
+		DA49F60A13D3265500CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA49F60C13D3265500CB2C71 /* Handbrake_Encode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handbrake_Encode.h; sourceTree = "<group>"; };
+		DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handbrake_Encode.m; sourceTree = "<group>"; };
+		DA49F61113D3265600CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+		DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */ = {isa = PBXFileReference; path = "Handbrake Encode-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA49F5F713D3265400CB2C71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA49F5FF13D3265400CB2C71 /* Automator.framework in Frameworks */,
+				DA49F60113D3265400CB2C71 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA49F5EF13D3265400CB2C71 = {
+			isa = PBXGroup;
+			children = (
+				DA49F60613D3265500CB2C71 /* Handbrake Encode */,
+				DA49F5FD13D3265400CB2C71 /* Frameworks */,
+				DA49F5FC13D3265400CB2C71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA49F5FC13D3265400CB2C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA49F5FB13D3265400CB2C71 /* Handbrake Encode.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA49F5FD13D3265400CB2C71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA49F5FE13D3265400CB2C71 /* Automator.framework */,
+				DA49F60013D3265400CB2C71 /* Cocoa.framework */,
+				DA49F60213D3265400CB2C71 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA49F60213D3265400CB2C71 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA49F60313D3265400CB2C71 /* AppKit.framework */,
+				DA49F60413D3265400CB2C71 /* CoreData.framework */,
+				DA49F60513D3265400CB2C71 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DA49F60613D3265500CB2C71 /* Handbrake Encode */ = {
+			isa = PBXGroup;
+			children = (
+				DA49F60C13D3265500CB2C71 /* Handbrake_Encode.h */,
+				DA49F60E13D3265500CB2C71 /* Handbrake_Encode.m */,
+				DA49F61013D3265600CB2C71 /* main.xib */,
+				DA49F60713D3265500CB2C71 /* Supporting Files */,
+			);
+			path = "Handbrake Encode";
+			sourceTree = "<group>";
+		};
+		DA49F60713D3265500CB2C71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA49F60813D3265500CB2C71 /* Handbrake Encode-Info.plist */,
+				DA49F60913D3265500CB2C71 /* InfoPlist.strings */,
+				DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA49F5FA13D3265400CB2C71 /* Handbrake Encode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA49F61613D3265600CB2C71 /* Build configuration list for PBXNativeTarget "Handbrake Encode" */;
+			buildPhases = (
+				DA49F5F613D3265400CB2C71 /* Sources */,
+				DA49F5F713D3265400CB2C71 /* Frameworks */,
+				DA49F5F813D3265400CB2C71 /* Resources */,
+				DA49F5F913D3265400CB2C71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Handbrake Encode";
+			productName = "Handbrake Encode";
+			productReference = DA49F5FB13D3265400CB2C71 /* Handbrake Encode.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA49F5F113D3265400CB2C71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = SkySports.com;
+			};
+			buildConfigurationList = DA49F5F413D3265400CB2C71 /* Build configuration list for PBXProject "Handbrake Encode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA49F5EF13D3265400CB2C71;
+			productRefGroup = DA49F5FC13D3265400CB2C71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA49F5FA13D3265400CB2C71 /* Handbrake Encode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA49F5F813D3265400CB2C71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA49F60B13D3265500CB2C71 /* InfoPlist.strings in Resources */,
+				DA49F60D13D3265500CB2C71 /* Handbrake_Encode.h in Resources */,
+				DA49F61213D3265600CB2C71 /* main.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA49F5F913D3265400CB2C71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA49F5F613D3265400CB2C71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA49F60F13D3265500CB2C71 /* Handbrake_Encode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA49F60913D3265500CB2C71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA49F60A13D3265500CB2C71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA49F61013D3265600CB2C71 /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA49F61113D3265600CB2C71 /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA49F61413D3265600CB2C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA49F61513D3265600CB2C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA49F61713D3265600CB2C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Handbrake Encode/Handbrake Encode-Prefix.pch";
+				INFOPLIST_FILE = "Handbrake Encode/Handbrake Encode-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		DA49F61813D3265600CB2C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Handbrake Encode/Handbrake Encode-Prefix.pch";
+				INFOPLIST_FILE = "Handbrake Encode/Handbrake Encode-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA49F5F413D3265400CB2C71 /* Build configuration list for PBXProject "Handbrake Encode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA49F61413D3265600CB2C71 /* Debug */,
+				DA49F61513D3265600CB2C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA49F61613D3265600CB2C71 /* Build configuration list for PBXNativeTarget "Handbrake Encode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA49F61713D3265600CB2C71 /* Debug */,
+				DA49F61813D3265600CB2C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA49F5F113D3265400CB2C71 /* Project object */;
+}
