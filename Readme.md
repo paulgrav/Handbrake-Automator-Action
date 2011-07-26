@@ -17,4 +17,4 @@ A Automator action that encodes video media files.  The idea is to provide a sim
 # Installation
 
 - Download the [HandbrakeCLI](http://handbrake.fr/downloads2.php) and copy it to /Applications 
-- Double click on Handbrake Encode.action
+- Double click on Handbrake Encode.action to install it in Automator
