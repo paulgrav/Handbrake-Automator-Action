@@ -6,6 +6,19 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DAC3D7DB13DC30BF00AC5556 /* Hanbrake Encode Service */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DAC3D7DC13DC30C000AC5556 /* Build configuration list for PBXAggregateTarget "Hanbrake Encode Service" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "Hanbrake Encode Service";
+			productName = "Hanbrake Encode Service";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DA49F5FF13D3265400CB2C71 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA49F5FE13D3265400CB2C71 /* Automator.framework */; };
 		DA49F60113D3265400CB2C71 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA49F60013D3265400CB2C71 /* Cocoa.framework */; };
@@ -30,6 +43,7 @@
 		DA49F61113D3265600CB2C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
 		DA49F61313D3265600CB2C71 /* Handbrake Encode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Handbrake Encode-Prefix.pch"; sourceTree = "<group>"; };
 		DA49F61913D3286F00CB2C71 /* main.command */ = {isa = PBXFileReference; explicitFileType = text.script.perl; fileEncoding = 4; path = main.command; sourceTree = "<group>"; };
+		DA6F9D9813DC29CE00BA1AD5 /* Handbrake Encode.workflow */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Handbrake Encode.workflow"; path = "../../../Library/Services/Handbrake Encode.workflow"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +62,7 @@
 		DA49F5EF13D3265400CB2C71 = {
 			isa = PBXGroup;
 			children = (
+				DA6F9D9813DC29CE00BA1AD5 /* Handbrake Encode.workflow */,
 				DA49F60613D3265500CB2C71 /* Handbrake Encode */,
 				DA49F5FD13D3265400CB2C71 /* Frameworks */,
 				DA49F5FC13D3265400CB2C71 /* Products */,
@@ -146,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				DA49F5FA13D3265400CB2C71 /* Handbrake Encode */,
+				DAC3D7DB13DC30BF00AC5556 /* Hanbrake Encode Service */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +270,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -284,6 +301,20 @@
 			};
 			name = Release;
 		};
+		DAC3D7DD13DC30C000AC5556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAC3D7DE13DC30C000AC5556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -304,6 +335,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DAC3D7DC13DC30C000AC5556 /* Build configuration list for PBXAggregateTarget "Hanbrake Encode Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC3D7DD13DC30C000AC5556 /* Debug */,
+				DAC3D7DE13DC30C000AC5556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -77,18 +77,18 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>11A511</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>Handbrake Encode</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.stomer.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>net.stomer.Handbrake-Encode</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Handbrake Encode</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -97,6 +97,20 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4B103</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>11A511</string>
+	<key>DTSDKName</key>
+	<string>macosx10.7</string>
+	<key>DTXcode</key>
+	<string>0410</string>
+	<key>DTXcodeBuild</key>
+	<string>4B103</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2011 Paul Grave. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
