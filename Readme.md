@@ -14,3 +14,7 @@ A Automator action that encodes video media files.  The idea is to provide a sim
 
 - HandbrakeCLI installed in /Applications
 - Mac OS X Lion X
+
+# Installation
+
+- Double click on Handbrake Encode.action
