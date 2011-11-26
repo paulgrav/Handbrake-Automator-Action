@@ -9,6 +9,7 @@
 use strict;
 use File::Temp qw/ tempfile /;
 use File::Copy;
+use File::Basename;
 
 my @handbrakePresets = ('Universal',
 	'iPod',
@@ -32,7 +33,7 @@ my $removeOriginal = $ENV{'removeOriginal'} + 0;
 my $container = $ENV{'container'} + 0;
 my $quality = $ENV{'quality'} + 0;
 my $deinterlace = $ENV{'deinterlace'} + 0;
-
+my $outputPath = $ENV{'outputPath'};
 
 my $suffix = 'm4v';
 my $qualityOption = "";
@@ -59,8 +60,21 @@ foreach my $filePath (@files) {
 	chomp($filePath);
 
 	my $outfile = $filePath;
+
+	if( $outputPath ) {
+		$outfile = $outputPath . "/" . basename($filePath);
+	}
+	
 	$outfile =~ s/\.\w+$//;
 	$outfile .= ".$suffix";
+	$outfile =~ s{ ^ ~ ( [^/]* ) }
+	{ $1
+		? (getpwnam($1))[7]
+		: ( $ENV{HOME} || $ENV{LOGDIR}
+		|| (getpwuid($<))[7]
+		)
+	}ex;
+		
 	my ($fh, $tempfile) = tempfile( SUFFIX => ".$suffix" );
 
 	# "$cmd" -i "$filePath" --preset="$handbrakePreset" -o "$tempfile > /dev/console";
