@@ -148,6 +148,7 @@
 		DA49F5F113D3265400CB2C71 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Paul Grave";
 			};
 			buildConfigurationList = DA49F5F413D3265400CB2C71 /* Build configuration list for PBXProject "Handbrake Encode" */;
@@ -250,7 +251,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -271,7 +272,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -279,6 +280,7 @@
 		DA49F61713D3265600CB2C71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handbrake Encode/Handbrake Encode-Prefix.pch";
 				INFOPLIST_FILE = "Handbrake Encode/Handbrake Encode-Info.plist";
@@ -292,6 +294,7 @@
 		DA49F61813D3265600CB2C71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Handbrake Encode/Handbrake Encode-Prefix.pch";
 				INFOPLIST_FILE = "Handbrake Encode/Handbrake Encode-Info.plist";
