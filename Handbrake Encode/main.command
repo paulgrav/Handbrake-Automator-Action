@@ -10,6 +10,7 @@ use strict;
 use File::Temp qw/ tempfile /;
 use File::Copy;
 use File::Basename;
+use Data::Dumper;
 
 my @handbrakePresets = ('Universal',
 	'iPod',
@@ -79,9 +80,21 @@ foreach my $filePath (@files) {
 
 	# "$cmd" -i "$filePath" --preset="$handbrakePreset" -o "$tempfile > /dev/console";
 	my $removeCMD = "osascript -e 'tell app \"Finder\" to delete POSIX file \"$filePath\"'";
-	my $encodeCMD = "$cmd -i '$filePath' $deinterlaceOption $qualityOption --preset='$handbrakePreset' -o '$tempfile'";
+	
+	# determine audio tracks
+	my $audioTracks = "$cmd -i '$filePath' --scan 2>&1";
+	my @audioOut = `$audioTracks`;
+	my $previousLine;
+	my $audioParam = "";
+	foreach my $line (@audioOut) {
+		chomp $line;
+		if( $line =~ /\+ subtitle tracks:/ && $previousLine =~ /\+ audio tracks:/ ) {
+			$audioParam = "-a none";
+		} 
+		$previousLine = $line;
+	}
 
-	#print $encodeCMD . "\n";
+	my $encodeCMD = "$cmd -i '$filePath' $deinterlaceOption $qualityOption $audioParam --preset='$handbrakePreset' -o '$tempfile'";
 
 	if( $removeOriginal ) {
 		system($encodeCMD) == 0 && move($tempfile,$outfile) && system($removeCMD) && print "$outfile\n";
